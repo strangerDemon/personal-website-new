@@ -1,51 +1,30 @@
 <template>
-  <!-- learn from https://www.bilibili.com/video/av8135647/?t=105 -->
   <div class="container">
-    <div class="heartLoading">
-      <div class="heart-0"></div>
-      <div class="heart-1"></div>
-      <div class="heart-2"></div>
-      <div class="heart-3"></div>
-      <div class="heart-4"></div>
-      <div class="heart-5"></div>
-      <div class="heart-6"></div>
-      <div class="heart-7"></div>
-      <div class="heart-8"></div>
+    <div class="heart-loading">
+      <div v-for="(i,index) in 8" :key="index" :class="'heart-'+i"></div>
     </div>
   </div>
 </template>
-<script>
+<script lang="ts">
 export default {
-  name: "heartLoading",
-  directives: {},
-  components: {},
-  data () {
+  name: 'heart-loading',
+  setup() {
     return {}
   },
-  props: {},
-  computed: {},
-  watch: {},
-  methods: {},
-  beforeCreate () { },
-  created () { },
-  destroyed () { },
-  mounted () { }
 }
-
 </script>
-<style lang="less" scoped>
+<style lang="less">
 .container {
   position: fixed;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center;
-}
-
-.heartLoading {
-  position: fixed;
-  left: calc(50vh);
-  top: 50%;
+  & .heart-loading {
+    position: fixed;
+    left: calc(50vh);
+    top: 50%;
+  }
 }
 
 [class*='heart-'] {

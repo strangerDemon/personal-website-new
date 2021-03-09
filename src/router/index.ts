@@ -10,6 +10,11 @@ const routes: RouteRecordRaw[] = [
     path: '/balloon',
     name: 'balloon',
     component: () => import('../views/animation/balloon/index.vue')
+  },
+  {
+    path: '/loading1',
+    name: 'loading1',
+    component: () => import('../views/animation/heart-loading/index.vue')
   }
 ];
 

@@ -3,17 +3,7 @@
 </template>
 
 <script lang="ts">
-import {
-  onBeforeMount,
-  onMounted,
-  onBeforeUpdate,
-  onUpdated,
-  onBeforeUnmount,
-  onUnmounted,
-  onErrorCaptured,
-  onRenderTracked,
-  onRenderTriggered,
-} from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 export default {
   name: 'balloon',
   //=>beforeCreate created

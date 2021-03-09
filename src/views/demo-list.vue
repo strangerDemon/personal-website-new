@@ -4,7 +4,7 @@
       <div class="group-title">{{groups.type}}: </div>
       <a-carousel autoplay>
         <div class="demo" v-for="(demo,index) in groups.list" :key="index">
-          <img @click="toDemo(demo)" class="frame" :src="!demo.image?basePath+'1.jpg':basePath+demo.image" />
+          <img @click="toDemo(demo)" class="frame" :src="!demo.legend?basePath+'1.jpg':basePath+demo.legend" />
           <div class="title">{{demo.name}}</div>
           <div class="description">{{demo.description}}</div>
         </div>

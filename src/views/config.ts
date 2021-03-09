@@ -15,6 +15,13 @@ export function list(): DemoTypeGroup[] {
           legend: 'balloon.gif',
           date: '',
           description: 'a lot balloon,try to click'
+        },
+        {
+          name: 'loading1',
+          path: 'loading1',
+          legend: 'heartLoading.gif',
+          date: '',
+          description: 'loading for heart'
         }
       ]
     },

@@ -15,6 +15,11 @@ const routes: RouteRecordRaw[] = [
     path: '/loading1',
     name: 'loading1',
     component: () => import('../views/animation/heart-loading/index.vue')
+  },
+  {
+    path: '/luck-draw',
+    name: 'luck-draw',
+    component: () => import('../views/others/luck-draw/index.vue')
   }
 ];
 
